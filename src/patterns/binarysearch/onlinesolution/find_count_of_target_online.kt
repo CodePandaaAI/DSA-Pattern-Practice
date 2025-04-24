@@ -1,7 +1,9 @@
 package patterns.binarysearch.onlinesolution
 
 fun main() {
-    val nums = listOf(1, 3, 3, 3, 5, 7, 7, 9, 11, 11, 11, 15)
+    val nums = listOf(
+        1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 7, 9, 11, 11, 11, 15
+    )
     val target = 3
     var first = -1
     var last = -1
