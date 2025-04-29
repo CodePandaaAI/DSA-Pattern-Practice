@@ -6,18 +6,23 @@ fun main() {
 
     var start = 0
     var end = nums.lastIndex
+    var result = -1
 
     while (start <= end) {
-        val mid = (start + end) / 2
-        if (mid > 0 && nums[mid] == target && nums[mid - 1] != target) {
-            println("target found at index $mid")
-            break
-        } else if (mid > 0 && nums[mid - 1] == target) {
-            end = mid - 1
-        } else if (nums[mid] > target) {
-            end = mid - 1
-        } else if (nums[mid] < target) {
-            start = mid + 1
-        } else println("Unexpected")
+        val mid = start + (end - start) / 2
+        when {
+            nums[mid] == target -> {
+                result = mid // store index and keep going right
+                start = mid + 1
+            }
+            nums[mid] < target -> start = mid + 1
+            else -> end = mid - 1
+        }
+    }
+
+    if (result != -1) {
+        println("Last occurrence of $target found at index $result")
+    } else {
+        println("$target not found")
     }
 }
