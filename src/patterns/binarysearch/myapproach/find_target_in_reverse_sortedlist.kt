@@ -6,15 +6,13 @@ fun main() {
     var start = 0
     var end = nums.lastIndex
 
-    while(start<= end){
-        val mid = (start+ end) /2
-        if(nums[mid] == target){
+    while (start <= end) {
+        val mid = (start + end) / 2
+        if (nums[mid] == target) {
             println("target found at index $mid")
             break
-        }
-        else if(nums[mid]>target){
+        } else if (nums[mid] > target) {
             start = mid + 1
-        }
-        else end = mid - 1
+        } else end = mid - 1
     }
 }
