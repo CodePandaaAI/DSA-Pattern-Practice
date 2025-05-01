@@ -1,7 +1,7 @@
 package patterns.binarysearch.myapproach
 
 fun main() {
-    val nums = listOf(30, 40, 50, 60, 5, 10, 20)
+    val nums = listOf(30, 40, 50, 60, 0, 5, 10, 15, 20)
     var start = 0
     var end = nums.lastIndex
 
