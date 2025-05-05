@@ -3,8 +3,9 @@
 A focused repository to learn Data Structures & Algorithms with a pattern-based approach.
 
 📁 Structure:
-- Each folder = 1 DSA pattern
-- Inside each: my attempt + online best solution
+- Theres one Main Folder "Patterns"
+- Inside Patterns Folder there is Folder for each Pattern Type like: Binary Search, Linear Search, etc.
+- Inside each Individual pattern folder consists of: my attempt + online best solution
 - `extras/`: Notes, roadmap, learning reflections
 
 ---
