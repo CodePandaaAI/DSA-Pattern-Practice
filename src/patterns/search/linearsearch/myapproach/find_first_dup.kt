@@ -1,4 +1,4 @@
-package patterns.linearsearch.myapproach
+package patterns.search.binarysearch.linearsearch.myapproach
 
 fun main() {
     val nums = listOf(5, 3, 1, 2, 3, 6)

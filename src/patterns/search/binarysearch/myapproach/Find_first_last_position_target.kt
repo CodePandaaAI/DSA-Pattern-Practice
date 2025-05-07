@@ -1,4 +1,4 @@
-package patterns.binarysearch.myapproach
+package patterns.search.binarysearch.myapproach
 
 fun main() {
     val nums = listOf(5, 7, 7, 8, 9, 10, 11, 12, 13)
@@ -12,16 +12,13 @@ fun main() {
     if (nums.last() == target) {
         last = nums.lastIndex
     } else {
+        // Find Last Index
         while (start <= end) {
             val mid = (start + end) / 2
             when {
                 nums[mid] == target -> {
-                    if (nums[mid + 1] == target) {
-                        start = mid + 1
-                    } else {
-                        last = mid
-                        break
-                    }
+                    last = mid
+                    start = mid + 1
                 }
                 nums[mid] > target -> {
                     end = mid - 1
@@ -38,20 +35,17 @@ fun main() {
         end = nums.lastIndex
         while (start <= end) {
             val mid = (start + end) / 2
-            when (target) {
-                nums[mid] -> {
-                    if (nums[mid - 1] == target) {
-                        end = mid - 1
-                    } else {
-                        first = mid
-                        break
-                    }
+            when {
+                nums[mid] == target -> {
+                    first = mid
+                    end = mid - 1
                 }
+                nums[mid] > target -> {
+                    end = mid - 1
+                }
+                else -> start = mid + 1
             }
-            if (nums[mid] < target) start = mid + 1
-            else end = mid - 1
         }
     }
-    val indexList = listOf(first, last)
-    println(indexList)
+    println(listOf(first, last))
 }
