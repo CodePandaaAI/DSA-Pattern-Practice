@@ -1,3 +1,5 @@
+package patterns.slidingwindow.myapproach
+
 fun main() {
     val arr = listOf(1, 12, -5, -6, 50, 3)
     val k = 4
