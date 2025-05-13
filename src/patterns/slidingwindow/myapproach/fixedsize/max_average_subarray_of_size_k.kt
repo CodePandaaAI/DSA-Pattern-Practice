@@ -1,10 +1,10 @@
-package patterns.slidingwindow.myapproach
+package patterns.slidingwindow.myapproach.fixedsize
 
 fun main() {
     val arr = listOf(1, 12, -5, -6, 50, 3)
     val k = 4
     var currentSum = 0.0
-    var currentAvg = 0.0
+    var currentAvg: Double
     for(i in 0..<k){
         currentSum += arr[i]
     }
