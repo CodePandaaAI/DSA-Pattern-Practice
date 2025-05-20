@@ -1,4 +1,4 @@
-package patterns.slidingwindow.myapproach.variablesize
+package patterns.slidingwindow.myapproach.variablesize.patterns.slidingwindow.myapproach.variablesize
 
 fun countSubarraysWithSum(nums: IntArray, k: Int): Int {
     var start = 0
