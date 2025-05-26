@@ -3,23 +3,25 @@ package patterns.slidingwindow.myapproach.variablesize
 fun main() {
     val s = "eceba"
     val k = 2
-    val currentList = mutableSetOf<Char>()
-    var max = 0
+    val map = mutableMapOf<Char, Int>()
     var start = 0
+    var maxLen = 0
 
-    for (i in 0..s.length - 1) {
-        if (!currentList.contains(s[i])) {
-            currentList.add(s[i])
-        }
-        else{
-            max++
-        }
-        println(currentList)
-        if (currentList.size > k) {
-            currentList.remove(s[start])
+    for (end in s.indices) {
+        val ch = s[end]
+        map[ch] = map.getOrDefault(ch, 0) + 1
+
+        while (map.size > k) {
+            val startChar = s[start]
+            map[startChar] = map[startChar]!! - 1
+            if (map[startChar] == 0) {
+                map.remove(startChar)
+            }
             start++
         }
-        max = maxOf(max, currentList.size)
+
+        maxLen = maxOf(maxLen, end - start + 1)
     }
-    println(max)
+
+    println("Longest substring length with at most $k distinct characters: $maxLen")
 }
