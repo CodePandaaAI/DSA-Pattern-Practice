@@ -4,7 +4,8 @@ fun main() {
     val first = Node(10)
     val second = Node(20)
     val third = Node(30)
-
+    val aa = arrayOf(2,4,7,1,5,9)
+    aa.sort()
     first.next = second
     second.next = third
     val target = 20
