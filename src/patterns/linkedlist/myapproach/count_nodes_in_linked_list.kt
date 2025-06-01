@@ -1,11 +1,8 @@
 package patterns.linkedlist.myapproach
 
-class Node(val data: Int) {
-    var next: Node? = null
-}
+import patterns.linkedlist.Node
 
 fun main() {
-    // Create linked list manually: 10 → 20 → 30 → null
     val first = Node(10)
     val second = Node(20)
     val third = Node(30)
