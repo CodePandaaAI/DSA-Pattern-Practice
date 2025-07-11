@@ -1,4 +1,4 @@
-package patterns.linkedlist
+package patterns.singlelinkedlist
 
 // Node class: each node holds data and reference to the next
 class Node(val data: Int) {

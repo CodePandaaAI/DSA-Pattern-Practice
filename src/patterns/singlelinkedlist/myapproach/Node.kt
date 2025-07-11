@@ -1,4 +1,4 @@
-package patterns.linkedlist.myapproach
+package patterns.singlelinkedlist.myapproach
 
 class Node(val data: Int) {
     var next: Node?  = null

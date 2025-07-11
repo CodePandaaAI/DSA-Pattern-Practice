@@ -1,4 +1,4 @@
-package patterns.linkedlist.myapproach
+package patterns.singlelinkedlist.myapproach
 
 fun reverseList(head: Node?): Node? {
     if (head?.next == null) {

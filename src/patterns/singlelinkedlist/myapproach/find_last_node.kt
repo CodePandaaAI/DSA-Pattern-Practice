@@ -1,4 +1,4 @@
-package patterns.linkedlist.myapproach
+package patterns.singlelinkedlist.myapproach
 
 fun main() {
     val first = Node(10)

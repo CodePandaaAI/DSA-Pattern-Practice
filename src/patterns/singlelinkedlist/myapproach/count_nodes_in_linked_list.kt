@@ -1,6 +1,6 @@
-package patterns.linkedlist.myapproach
+package patterns.singlelinkedlist.myapproach
 
-import patterns.linkedlist.Node
+import patterns.singlelinkedlist.Node
 
 fun main() {
     val first = Node(10)
