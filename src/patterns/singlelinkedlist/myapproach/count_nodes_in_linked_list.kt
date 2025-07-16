@@ -1,6 +1,5 @@
 package patterns.singlelinkedlist.myapproach
 
-import patterns.singlelinkedlist.Node
 
 fun main() {
     val first = Node(10)

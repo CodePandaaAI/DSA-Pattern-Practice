@@ -1,9 +1,8 @@
 package patterns.singlelinkedlist
 
+import patterns.singlelinkedlist.myapproach.Node
+
 // Node class: each node holds data and reference to the next
-class Node(val data: Int) {
-    var next: Node? = null
-}
 
 // LinkedList class manages the chain
 class LinkedList {

@@ -1,5 +1,5 @@
 package patterns.singlelinkedlist.myapproach
 
-class Node(val data: Int) {
+class Node(var data: Int) {
     var next: Node?  = null
 }
