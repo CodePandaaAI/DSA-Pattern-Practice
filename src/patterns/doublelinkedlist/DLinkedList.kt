@@ -1,6 +1,6 @@
 package patterns.doublelinkedlist
 
-class Node(val data: Int) {
+class Node(var data: Int) {
     var next: Node? = null
     var previous: Node? = null
 
